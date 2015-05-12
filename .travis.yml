@@ -1,0 +1,9 @@
+language: ruby
+
+install:
+    - sudo apt-get install --yes build-essential python r-base-core pandoc python-pip python-yaml
+    - pip install CommonMark
+
+script:
+    - make preview
+    - make unittest
